@@ -1,3 +1,1 @@
-class Car < Struct.new(:number, :color)
-
-end
+class Car < Struct.new(:number, :colour); end

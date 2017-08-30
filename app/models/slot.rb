@@ -1,8 +1,8 @@
 class Slot < Struct.new(:position)
   attr_reader :car
 
-  def park(number, color)
-    @car = Car.new(number, color)
+  def park(number, colour)
+    @car = Car.new(number, colour)
   end
 
   def leave
