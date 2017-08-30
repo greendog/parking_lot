@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
 require './lib/parking_lot'
+
+ARGF.each do |line|
+    CommandDispatcher.parse(line.delete!("\n"))
+end
