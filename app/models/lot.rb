@@ -1,6 +1,6 @@
 class Lot
-  attr_accessor :slots
-  attr_accessor :number_slots
+  attr_reader :slots
+  attr_reader :number_slots
 
   def initialize(number_slots)
     @number_slots = number_slots
@@ -10,5 +10,13 @@ class Lot
   def create!
     1.upto(number_slots) { |t| slots << Slot.new(t) }
     slots
+  end
+
+  def free_slots
+    slots.select(&:free?)
+  end
+
+  def slot_by_position(position)
+    slots.select { |slot| slot.position.equal?(position) }.first
   end
 end
