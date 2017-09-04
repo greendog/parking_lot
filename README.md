@@ -27,9 +27,6 @@ please include an executable file called parking_lot at the root of your
 project directory​ which builds the code, runs tests/specs, then runs the
 program. It takes an input file as an argument and prints the output on
 STDOUT. Please see the example below.
-9. MANDATORY: Please do not make either your solution or this problem
-statement publicly available by, for example, using github or bitbucket or by
-posting this problem to a blog or forum.
 
 
 Problem Statement
